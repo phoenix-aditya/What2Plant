@@ -15,16 +15,6 @@ What to plant is a Deep learning based web application that helps farmer to dete
 
 <p>&nbsp;</p>
 
-
-## Model Details
-
-deep learning model that is trained on crop-recommendation-dataset
-
-![l](https://github.com/phoenix-aditya/What2Plant/blob/main/assets/model.png)
-
-<p>&nbsp;</p>
-
-
 ## See it working
 ### So, how does it work?
 
@@ -35,3 +25,14 @@ deep learning model that is trained on crop-recommendation-dataset
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
+
+
+## Model Details
+
+deep learning model that is trained on crop-recommendation-dataset
+
+![l](https://github.com/phoenix-aditya/What2Plant/blob/main/assets/model.png)
+
+<p>&nbsp;</p>
+
+Thanks for visiting :)
