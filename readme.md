@@ -18,7 +18,6 @@ What to plant is a Deep learning based web application that helps farmer to dete
 <p>&nbsp;</p>
 
 ## See it working
-### So, how does it work?
 
 ![l](https://github.com/phoenix-aditya/What2Plant/blob/main/assets/mainpage.png)
 ![l](https://github.com/phoenix-aditya/What2Plant/blob/main/assets/pred1.png)
