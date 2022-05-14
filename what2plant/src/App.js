@@ -44,8 +44,8 @@ function App() {
 
   useEffect(() => {
     const getNewImage =  (predCrop) => {
-      if (predCrop === "rice") setPredictedCropImage('https://chefsmandala.com/wp-content/uploads/2018/04/Cooked-Rice-Dish-400x400.jpg');
-      else if(predCrop === "maize") setPredictedCropImage('https://is1.ecplaza.com/m_9v-5PZg66GFCLMxPy35PCF79A=/fit-in/400x400/filters:fill(white,1)/is2.ecplaza.com/ecplaza2/products/c/cb/cbf/1135319779/4592856.jpg');
+      if (predCrop === "rice") setPredictedCropImage('https://chefsmandala.com/wp-content/uploads/2018/04/Cooked-Rice-Dish-400x400.jpg/');
+      else if(predCrop === "maize") setPredictedCropImage('https://is1.ecplaza.com/m_9v-5PZg66GFCLMxPy35PCF79A=/fit-in/400x400/filters:fill(white,1)/is2.ecplaza.com/ecplaza2/products/c/cb/cbf/1135319779/4592856.jpg/');
       else if(predCrop === "chickpea") setPredictedCropImage('https://cdn.tridge.com/image/original/0d/a3/89/0da389af988f9a193f852db9c26a6e10d2b20bbc.jpg')
       else if(predCrop === "kidneybeans") setPredictedCropImage('https://cpimg.tistatic.com/07379662/b/4/Kidney-Bean.jpg');
       else if(predCrop === "pigeonpeas") setPredictedCropImage('https://i.ebayimg.com/images/g/Sa4AAOSwmDhhJTDg/s-l400.jpg');
@@ -75,7 +75,7 @@ function App() {
   
 
   const getDataFromApi = async () => {
-    const {data} = await axios.post('http://what2plant.herokuapp.com/suggest_crop/',{
+    const {data} = await axios.post('https://what2plant.herokuapp.com/suggest_crop/',{
       "N":nitrogen,
       "P":phosphorus,
       "K":potassium,
@@ -89,7 +89,7 @@ function App() {
 
   useEffect(()=>{
     const getWeatherData = async () => {
-      var weatherApiUrl = `http://api.weatherapi.com/v1/current.json?key=${weatherApiKey}&q=${latitude},${longitude}&aqi=yes`;
+      var weatherApiUrl = `https://api.weatherapi.com/v1/current.json?key=${weatherApiKey}&q=${latitude},${longitude}&aqi=yes`;
       const {data} = await axios.get(weatherApiUrl).catch((err)=>{
         console.log(err);
       })
